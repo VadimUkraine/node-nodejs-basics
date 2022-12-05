@@ -16,19 +16,4 @@ const isResourceAvailable = async (filePath) => {
 	return isResourceCreated;
 };
 
-
-// const isResourceAvailable = async (filePath) => {
-//   let isCreateResource;
-
-//   try {
-//     await access(filePath, constants.F_OK);
-//     isCreateResource = true;
-//   } 
-//   catch { 
-//     isCreateResource = false;  
-//   }
-
-//   return isCreateResource;
-// };
-
 export default isResourceAvailable;
